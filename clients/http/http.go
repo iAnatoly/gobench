@@ -19,8 +19,8 @@ type HttpClient struct {
 }
 
 type HttpClientConfig struct {
-	dnsResolveOverride string
-	verifyTLS          bool
+	DnsResolveOverride string
+	VerifyTLS          bool
 }
 
 func NewHttpClient(ctx context.Context, prefix string, config ...HttpClientConfig) (HttpClient, error) {
@@ -66,18 +66,18 @@ func NewHttpClient(ctx context.Context, prefix string, config ...HttpClientConfi
 	}
 
 	if len(config) > 0 {
-		if config[0].dnsResolveOverride != "" {
+		if config[0].DnsResolveOverride != "" {
 			dialer := &net.Dialer{
 				Timeout:   10 * time.Second, // TODO: make configurable in the config
 				KeepAlive: 10 * time.Second,
 				DualStack: true,
 			}
 			tr.DialContext = func(ctx context.Context, network, addr string) (net.Conn, error) {
-				addr = config[0].dnsResolveOverride
+				addr = config[0].DnsResolveOverride
 				return dialer.DialContext(ctx, network, addr)
 			}
 		}
-		tr.TLSClientConfig.InsecureSkipVerify = !config[0].verifyTLS
+		tr.TLSClientConfig.InsecureSkipVerify = !config[0].VerifyTLS
 	}
 
 	client := &http.Client{
