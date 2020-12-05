@@ -7,8 +7,8 @@ import (
 	"strings"
 
 	"github.com/facebook/ent/dialect/sql"
-	"github.com/gobench-io/gobench/ent/gauge"
-	"github.com/gobench-io/gobench/ent/metric"
+	"github.com/iAnatoly/gobench/ent/gauge"
+	"github.com/iAnatoly/gobench/ent/metric"
 )
 
 // Gauge is the model entity for the Gauge schema.

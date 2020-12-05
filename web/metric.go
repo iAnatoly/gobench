@@ -8,11 +8,11 @@ import (
 
 	"github.com/go-chi/chi"
 	"github.com/go-chi/render"
-	"github.com/gobench-io/gobench/ent"
-	"github.com/gobench-io/gobench/ent/counter"
-	"github.com/gobench-io/gobench/ent/gauge"
-	"github.com/gobench-io/gobench/ent/histogram"
-	"github.com/gobench-io/gobench/ent/metric"
+	"github.com/iAnatoly/gobench/ent"
+	"github.com/iAnatoly/gobench/ent/counter"
+	"github.com/iAnatoly/gobench/ent/gauge"
+	"github.com/iAnatoly/gobench/ent/histogram"
+	"github.com/iAnatoly/gobench/ent/metric"
 )
 
 // middleware to get metric with metricID in the url param

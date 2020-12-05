@@ -9,8 +9,8 @@ import (
 	"github.com/facebook/ent/dialect/sql"
 	"github.com/facebook/ent/dialect/sql/sqlgraph"
 	"github.com/facebook/ent/schema/field"
-	"github.com/gobench-io/gobench/ent/gauge"
-	"github.com/gobench-io/gobench/ent/predicate"
+	"github.com/iAnatoly/gobench/ent/gauge"
+	"github.com/iAnatoly/gobench/ent/predicate"
 )
 
 // GaugeDelete is the builder for deleting a Gauge entity.

@@ -4,7 +4,7 @@ import (
 	"net/http"
 
 	"github.com/go-chi/render"
-	"github.com/gobench-io/gobench/ent"
+	"github.com/iAnatoly/gobench/ent"
 )
 
 // Err is the error struct that compatible to Google API recommendation

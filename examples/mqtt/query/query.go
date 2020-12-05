@@ -20,9 +20,9 @@ import (
 
 	paho "github.com/eclipse/paho.mqtt.golang"
 
-	"github.com/gobench-io/gobench/clients/mqtt"
-	"github.com/gobench-io/gobench/dis"
-	"github.com/gobench-io/gobench/executor/scenario"
+	"github.com/iAnatoly/gobench/clients/mqtt"
+	"github.com/iAnatoly/gobench/dis"
+	"github.com/iAnatoly/gobench/executor/scenario"
 )
 
 const (

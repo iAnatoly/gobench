@@ -7,8 +7,8 @@ import (
 	"log"
 	"time"
 
-	httpClient "github.com/gobench-io/gobench/clients/http"
-	"github.com/gobench-io/gobench/executor/scenario"
+	httpClient "github.com/iAnatoly/gobench/clients/http"
+	"github.com/iAnatoly/gobench/executor/scenario"
 )
 
 func export() scenario.Vus {

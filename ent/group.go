@@ -7,8 +7,8 @@ import (
 	"strings"
 
 	"github.com/facebook/ent/dialect/sql"
-	"github.com/gobench-io/gobench/ent/application"
-	"github.com/gobench-io/gobench/ent/group"
+	"github.com/iAnatoly/gobench/ent/application"
+	"github.com/iAnatoly/gobench/ent/group"
 )
 
 // Group is the model entity for the Group schema.

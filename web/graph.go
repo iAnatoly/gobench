@@ -7,8 +7,8 @@ import (
 
 	"github.com/go-chi/chi"
 	"github.com/go-chi/render"
-	"github.com/gobench-io/gobench/ent"
-	"github.com/gobench-io/gobench/ent/graph"
+	"github.com/iAnatoly/gobench/ent"
+	"github.com/iAnatoly/gobench/ent/graph"
 )
 
 func (h *handler) graphCtx(next http.Handler) http.Handler {

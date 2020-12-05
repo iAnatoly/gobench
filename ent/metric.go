@@ -7,8 +7,8 @@ import (
 	"strings"
 
 	"github.com/facebook/ent/dialect/sql"
-	"github.com/gobench-io/gobench/ent/graph"
-	"github.com/gobench-io/gobench/ent/metric"
+	"github.com/iAnatoly/gobench/ent/graph"
+	"github.com/iAnatoly/gobench/ent/metric"
 )
 
 // Metric is the model entity for the Metric schema.

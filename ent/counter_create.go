@@ -9,8 +9,8 @@ import (
 
 	"github.com/facebook/ent/dialect/sql/sqlgraph"
 	"github.com/facebook/ent/schema/field"
-	"github.com/gobench-io/gobench/ent/counter"
-	"github.com/gobench-io/gobench/ent/metric"
+	"github.com/iAnatoly/gobench/ent/counter"
+	"github.com/iAnatoly/gobench/ent/metric"
 )
 
 // CounterCreate is the builder for creating a Counter entity.

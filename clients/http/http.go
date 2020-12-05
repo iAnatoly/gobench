@@ -9,8 +9,8 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/gobench-io/gobench/executor"
-	"github.com/gobench-io/gobench/executor/metrics"
+	"github.com/iAnatoly/gobench/executor"
+	"github.com/iAnatoly/gobench/executor/metrics"
 )
 
 type HttpClient struct {

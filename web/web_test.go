@@ -11,9 +11,9 @@ import (
 	"testing"
 
 	"github.com/go-chi/chi"
-	"github.com/gobench-io/gobench/ent"
-	"github.com/gobench-io/gobench/logger"
-	"github.com/gobench-io/gobench/master"
+	"github.com/iAnatoly/gobench/ent"
+	"github.com/iAnatoly/gobench/logger"
+	"github.com/iAnatoly/gobench/master"
 	"github.com/stretchr/testify/assert"
 )
 

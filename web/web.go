@@ -9,10 +9,10 @@ import (
 	"github.com/go-chi/chi/middleware"
 	"github.com/go-chi/cors"
 	"github.com/go-chi/jwtauth"
-	"github.com/gobench-io/gobench/ent"
-	"github.com/gobench-io/gobench/logger"
-	"github.com/gobench-io/gobench/master"
-	_ "github.com/gobench-io/gobench/web/statik"
+	"github.com/iAnatoly/gobench/ent"
+	"github.com/iAnatoly/gobench/logger"
+	"github.com/iAnatoly/gobench/master"
+	_ "github.com/iAnatoly/gobench/web/statik"
 	"github.com/rakyll/statik/fs"
 )
 
