@@ -3,13 +3,13 @@ package master
 import (
 	"context"
 
-	"github.com/gobench-io/gobench/ent"
-	"github.com/gobench-io/gobench/pb"
+	"github.com/iAnatoly/gobench/ent"
+	"github.com/iAnatoly/gobench/pb"
 
-	entApp "github.com/gobench-io/gobench/ent/application"
-	entGraph "github.com/gobench-io/gobench/ent/graph"
-	entGroup "github.com/gobench-io/gobench/ent/group"
-	entMetric "github.com/gobench-io/gobench/ent/metric"
+	entApp "github.com/iAnatoly/gobench/ent/application"
+	entGraph "github.com/iAnatoly/gobench/ent/graph"
+	entGroup "github.com/iAnatoly/gobench/ent/group"
+	entMetric "github.com/iAnatoly/gobench/ent/metric"
 )
 
 func (m *Master) Counter(ctx context.Context, req *pb.CounterReq) (*pb.CounterRes, error) {

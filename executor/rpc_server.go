@@ -4,7 +4,7 @@ import (
 	"context"
 	"os"
 
-	"github.com/gobench-io/gobench/pb"
+	"github.com/iAnatoly/gobench/pb"
 )
 
 // Start begins to run the program

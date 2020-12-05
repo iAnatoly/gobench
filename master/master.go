@@ -15,12 +15,12 @@ import (
 
 	"context"
 
-	"github.com/gobench-io/gobench/agent"
-	"github.com/gobench-io/gobench/ent"
-	"github.com/gobench-io/gobench/ent/application"
-	"github.com/gobench-io/gobench/ent/tag"
-	"github.com/gobench-io/gobench/executor"
-	"github.com/gobench-io/gobench/logger"
+	"github.com/iAnatoly/gobench/agent"
+	"github.com/iAnatoly/gobench/ent"
+	"github.com/iAnatoly/gobench/ent/application"
+	"github.com/iAnatoly/gobench/ent/tag"
+	"github.com/iAnatoly/gobench/executor"
+	"github.com/iAnatoly/gobench/logger"
 
 	"github.com/facebook/ent/dialect/sql"
 	_ "github.com/mattn/go-sqlite3"

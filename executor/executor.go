@@ -9,11 +9,11 @@ import (
 	"sync"
 	"time"
 
-	"github.com/gobench-io/gobench/dis"
-	"github.com/gobench-io/gobench/executor/metrics"
-	"github.com/gobench-io/gobench/executor/scenario"
-	"github.com/gobench-io/gobench/logger"
-	"github.com/gobench-io/gobench/pb"
+	"github.com/iAnatoly/gobench/dis"
+	"github.com/iAnatoly/gobench/executor/metrics"
+	"github.com/iAnatoly/gobench/executor/scenario"
+	"github.com/iAnatoly/gobench/logger"
+	"github.com/iAnatoly/gobench/pb"
 	"google.golang.org/grpc"
 
 	gometrics "github.com/rcrowley/go-metrics"

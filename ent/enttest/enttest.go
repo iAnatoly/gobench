@@ -5,9 +5,9 @@ package enttest
 import (
 	"context"
 
-	"github.com/gobench-io/gobench/ent"
+	"github.com/iAnatoly/gobench/ent"
 	// required by schema hooks.
-	_ "github.com/gobench-io/gobench/ent/runtime"
+	_ "github.com/iAnatoly/gobench/ent/runtime"
 
 	"github.com/facebook/ent/dialect/sql/schema"
 )

@@ -14,8 +14,8 @@ import (
 	"flag"
 	"os"
 
-	"github.com/gobench-io/gobench/executor"
-	"github.com/gobench-io/gobench/logger"
+	"github.com/iAnatoly/gobench/executor"
+	"github.com/iAnatoly/gobench/logger"
 )
 
 func configureOptions(fs *flag.FlagSet, args []string) (
