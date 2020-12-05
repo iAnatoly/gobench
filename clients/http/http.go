@@ -3,8 +3,10 @@ package http
 import (
 	"bytes"
 	"context"
+	"crypto/tls"
 	"fmt"
 	"io/ioutil"
+	"net"
 	"net/http"
 	"time"
 
@@ -17,7 +19,12 @@ type HttpClient struct {
 	client *http.Client
 }
 
-func NewHttpClient(ctx context.Context, prefix string) (HttpClient, error) {
+type HttpClientConfig struct {
+	dnsResolveOverride string
+	verifyTLS          bool
+}
+
+func NewHttpClient(ctx context.Context, prefix string, config ...HttpClientConfig) (HttpClient, error) {
 	group := metrics.Group{
 		Name: "HTTP (" + prefix + ")",
 		Graphs: []metrics.Graph{
@@ -59,9 +66,24 @@ func NewHttpClient(ctx context.Context, prefix string) (HttpClient, error) {
 		MaxIdleConnsPerHost: 300,
 	}
 
+	if len(config) > 0 {
+		if config[0].dnsResolveOverride != "" {
+			dialer := &net.Dialer{
+				Timeout:   10 * time.Second, // TODO: make configurable in the config
+				KeepAlive: 10 * time.Second,
+				DualStack: true,
+			}
+			tr.DialContext = func(ctx context.Context, network, addr string) (net.Conn, error) {
+				addr = config[0].dnsResolveOverride
+				return dialer.DialContext(ctx, network, addr)
+			}
+		}
+		tr.TLSClientConfig.InsecureSkipVerify = !config[0].verifyTLS
+	}
+
 	client := &http.Client{
 		Transport: tr,
-		Timeout:   time.Second * 10,
+		Timeout:   time.Second * 10, // TODO: use this or the dialer
 	}
 
 	httpClient := HttpClient{
